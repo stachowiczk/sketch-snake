@@ -29,10 +29,18 @@
 }
 #container {
     display: flex;
-    width: 100vw;
+    flex: 1;
+    width: 100vh;
     height: 100vh;
     margin: 0;
-    padding: 1.5em;
+    padding: 1.5rem;
     border: none;
     background-color: darkgray;
+}
+
+body {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
 }
