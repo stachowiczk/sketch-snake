@@ -8,8 +8,13 @@
 
 .row {
     display: flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    
+    
     flex-direction: column;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
 }
 
 .col {
