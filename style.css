@@ -1,0 +1,30 @@
+.grid {
+    border: 0.1rem solid black;
+    border-radius: 10;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.col {
+    display: flex;
+    flex: 0 1 auto;
+
+}
+
+#container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 1.5em;
+    border: none;
+    background-color: darkgray;
+
+}
