@@ -1,5 +1,6 @@
 "use strict";
 var container = document.querySelector('#container');
+
 function paintGrid(gridSize) {
     for (var i = 0; i < gridSize; i++) {
         var colCurrent = document.createElement('div');
@@ -15,3 +16,27 @@ function paintGrid(gridSize) {
     }
 }
 paintGrid(16);
+
+let gridNodes = document.querySelectorAll('.grid');
+
+function onHover (event) {
+    event.addEventListener('mouseover', function () {
+            console.log(event);
+            event.classList.add('red');
+        });
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function onMouseOut (event) {
+    event.addEventListener('mouseout', async() => {
+        await sleep(300);
+        event.classList.remove('red');
+    });
+}
+gridNodes.forEach(onHover);
+gridNodes.forEach(onMouseOut);
+
+
